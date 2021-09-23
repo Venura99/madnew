@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".restuarant">
+
+    <Button
+        android:id="@+id/view_three"
+        android:layout_width="148dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="624dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/view_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_in"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/view_in"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_third"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/hotel_third"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view_second"
+        android:layout_width="148dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/view_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_rat"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/view_rat"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_second"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/hotel_second"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView2"
+        android:layout_width="418dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="64dp"
+        android:background="#F6F5F5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/value_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:hint="@string/value_hint"
+            android:inputType="textPersonName" />
+    </SearchView>
+
+    <TextView
+        android:id="@+id/hotel_first"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/hotel_first"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_rate"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/view_rate"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_first" />
+
+    <Button
+        android:id="@+id/view_first"
+        android:layout_width="148dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/view_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar6"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="437dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/choose_res"
+        android:layout_width="268dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/choose_res"
+        android:textColor="#F3EFEF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar6"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="44dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="14dp"
+        android:background="#F8F3F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ares" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="184dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="384dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cres" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="148dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="552dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bres" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

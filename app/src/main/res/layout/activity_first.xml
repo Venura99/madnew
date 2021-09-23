@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#EFC803"
+            android:backgroundTint="#FD0303"
+            app:tabIconTint="@color/purple_200"
+            app:tabIndicatorColor="#FDE82A"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#F6DD04"
+            app:tabTextColor="#FDFCFC">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/show_kottu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_kottu" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/show_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_rice" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/show_pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_pizza" />
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FBFAFA"
+            tools:context=".activity_first">
+
+            <TextView
+                android:id="@+id/food_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="296dp"
+                android:text="@string/food_view"
+                android:textColor="#F6F2F2"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.177"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/about_view"
+                android:layout_width="287dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/about_view"
+                android:textColor="#F6F2F2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.403"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food_view" />
+
+            <TextView
+                android:id="@+id/view_size"
+                android:layout_width="47dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/view_size"
+                android:textColor="#F6F2F2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.203"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_view" />
+
+            <TextView
+                android:id="@+id/view_qty"
+                android:layout_width="53dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/view_qty"
+                android:textColor="#F6F2F2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.768"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_view" />
+
+            <EditText
+                android:id="@+id/Input_S"
+                android:layout_width="104dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#FAF6F6"
+                android:ems="10"
+                android:hint="@string/input_s"
+                android:inputType="textPersonName"
+                android:textColor="#F6F2F2"
+                android:textColorHint="#AAA6A6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_size" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="84dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#FAF6F6"
+                android:ems="10"
+                android:hint="@string/input_quan"
+                android:inputType="textPersonName"
+                android:textColorHint="#AAA6A6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.785"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_qty" />
+
+            <Button
+                android:id="@+id/order_view"
+                android:layout_width="168dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="560dp"
+                android:text="@string/order_view"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="341dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aabbcc" />
+
+            <TextView
+                android:id="@+id/Input_value"
+                android:layout_width="153dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="236dp"
+                android:text="@string/Input_value"
+                android:textColor="#F40505"
+                android:textSize="34sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
